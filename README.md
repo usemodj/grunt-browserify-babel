@@ -31,9 +31,11 @@ $ yarn add --dev babel-preset-env
 ### Install other useful grunt plugins:
 ```
 $ yarn add --dev jit-grunt time-grunt grunt-contrib-clean grunt-contrib-jshint
+
 ```
 
 ------------------------------------------
+
 
 ## Build
 
