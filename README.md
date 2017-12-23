@@ -30,13 +30,20 @@ $ yarn add --dev babel-preset-env
 
 ### Install other useful grunt plugins:
 ```
+<<<<<<< HEAD
 $ yarn add --dev jit-grunt time-grunt grunt-contrib-clean grunt-contrib-jshint
+=======
+$ yarn add --dev jit-grunt grunt-contrib-clean grunt-contrib-jshint
+>>>>>>> a57ff9c1c9839ed0f5a4180063358f051f073a71
 ```
 
 
 ------------------------------------------
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a57ff9c1c9839ed0f5a4180063358f051f073a71
 ## Build
 
 #### For development:
