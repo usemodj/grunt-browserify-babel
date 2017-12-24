@@ -30,14 +30,37 @@ $ yarn add --dev babel-preset-env
 
 ### Install other useful grunt plugins:
 ```
-$ yarn add --dev jit-grunt time-grunt grunt-contrib-clean grunt-contrib-jshint
+$ yarn add --dev jit-grunt time-grunt grunt-newer grunt-contrib-clean grunt-contrib-eshint
 
 ```
+
+### Install `eslint`:
+ <https://eslint.org/docs/user-guide/getting-started>
+```
+$ yarn add --dev eslint  grunt-eslint
+```
+
+Setup a `eslint` configuration file:
+```
+$ ./node_modules/.bin/eslint --init
+```
+
+After that, you can run `ESLint` in your project’s root directory like this:
+```
+$ ./node_modules/.bin/eslint yourfile.js
+```
+Any plugins or shareable configs that you use must also be installed locally to work with a locally-installed ESLint.
+
 
 ------------------------------------------
 
 
 ## Build
+
+#### For default all:
+```
+$ grunt
+```
 
 #### For development:
 ```

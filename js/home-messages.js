@@ -1,5 +1,3 @@
-"use strict"
-
 var homeMessage = "Hi, this message is for Home page.";
 
 var generateMessage = function (message) {
