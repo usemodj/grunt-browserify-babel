@@ -42,7 +42,13 @@ module.exports = function(grunt) {
               outputs: [
                 "<%= app.server %>/js/main-home.js",
                 "<%= app.server %>/js/main-products.js"
-              ]
+              ],
+`              `opts.threshold` can be a number or a function `opts.threshold(row, groups)` where row is a module-deps object and groups is an array of bundles which depend on the row. If the threshold function returns true, that row and all its dependencies will go to the common bundle. If false, the row (but not its dependencies) will go to each bundle in groups.
+`              threshold: function(row, groups) {
+                  if (/.*a\.js$/.test(row.id)) return false;
+                  if (/.*[z]\.js$/.test(row.id)) return true;
+                  return this._defaultThreshold(row, groups);
+              },
             }]
           ],
           watch: true,
